@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { } /* 디자인 시작 전에 전역으로 적용할 속성 margin, padding에 적용 */
+        b {color: red; }
+        #id1 {color: green; } /* 아이디 선택자 */
+        #id2 {color: greenyellow; }
+        .c1 {color: coral; } /* 클래스 선택자 */
+        .box p {color: gold; } /* box 클래스 안에 있는 모든 p태그 */
+        .box > p {color: brown; } /* 클래스 바로 밑에 있는 p태그에만 */
+        .box2 li,
+        .box2 p {color: blue; }
+        .forms input[type=text] {background: black; color: white;}
+    </style>
+</head>
+<body>
+    <p>선택자</p>
+    <b>선택자</b>
+    <!-- id는 같은 이름을 사용하면 안 됨 -->
+    <p id="id1">#아이디 선택자</p>
+    <p id="id2">#아이디 선택자</p>
+
+    <p class="c1">.클래스 선택자</p>
+    <p class="c1">.클래스 선택자</p>
+    
+    <div class="box">
+        <p>하위 선택자 꺽쇠</p>
+        <p>하위 선택자 꺽쇠</p>
+
+        <form>
+            <p>하위 선택자 공백</p>
+        </form>
+    </div>
+
+    <div class="box2">
+        <ul>
+            <li>목록</li>
+            <li>목록</li>
+            <li>목록</li>
+        </ul>
+
+        <div>
+            <p>내용...</p>
+        </div>
+
+    </div>
+    <form class="forms">
+        <input type="text">
+        <input type="submit">
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list {
+            overflow: hidden;
+            width: 800px;
+            margin: 0 auto; /* 중앙에 정렬하기 */
+            border: 1px solid #777;
+        }
+        .list .inner {
+            float: left;
+            width: 50.0000%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .list .inner span {
+            display: block;
+        }
+
+        .inner .innerContent {
+            float: none;
+            padding-bottom: 50px;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+        .inner .innerCheck {
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .innerCheck .check {
+            float: none;
+            border: 1px solid #777;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .innerCheck .submit {
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .check .checkL {
+            float: left;
+        }
+        .check .checkR {
+            float: right;
+        }
+
+        .submit .pick {
+            float: left;
+            width: 50.0000%;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            border: 1px solid #777;
+        }
+        .innerContent p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h3>과제2</h3>
+    <div class="list">
+        <div class="inner">
+            <img src="img/001.png">
+        </div>
+        <div class="inner wrap">
+            <div class="innerContent">
+            <p>제목 : 패딩바텀 50px</p>
+            <p>내용 : ㅁㄹ</p>
+            </div>
+            <div class="innerCheck">
+                <div class="check">
+                    <div class="checkL">가격</div>
+                    <div class="checkR">10000원</div>
+                </div>
+                <div class="submit">
+                    <input type="button" value="장바구니" class="pick">
+                    <input type="button" value="구매하기" class="pick">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

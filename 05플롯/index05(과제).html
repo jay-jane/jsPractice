@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list {
+            overflow: hidden;
+            width: 1020px;
+            margin: 0 auto;
+        }
+        .list .music {
+            float: left;
+            width: 480px;
+            height: 310px;
+            overflow: hidden;
+        }
+        .list .image {
+            float: left;
+            border: 1px solid #777;
+            width: 236px;
+            height: 310px;
+            margin-left: 8px;
+        }
+        .list .user {
+            float: left;
+            border: 1px solid #777;
+            width: 280px;
+            height: 310px;
+            margin-left: 8px;
+            overflow: hidden;
+        }
+        
+        .music .musicImg {
+            float: left;
+            width: 33.3333%;
+            border: 1px solid #777;
+            height: 155px;
+            box-sizing: border-box;
+        }
+
+        .user .join {
+            border: 1px solid #777;
+            height: 50%;
+            overflow: hidden;
+        }
+        .user .blank {
+            /* border: 1px solid #777; */
+            height: 50%;
+        }
+        
+        .join .left {
+            float: left;
+            font-size: 10px;
+            color: darkgrey;
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+        .join .right {
+            float: right;
+            font-size: 10px;
+            text-decoration: none;
+            color: darkgrey;
+            margin-top: 40px;
+            margin-right: 20px;
+        }
+        .loginButton {
+            background-color: #19ce60;
+            border: none;
+            color: white;
+            width: 250px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .join .loginAlign {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 전체 사이즈 1020px -->
+    <!-- 사진영역 480px -->
+    <div class="list">
+        <div class="music">
+            <div class="musicImg">
+                사진
+            </div>
+            <div class="musicImg">
+                사진
+            </div>
+            <div class="musicImg">
+                사진
+            </div>
+            <div class="musicImg">
+                사진
+            </div>
+            <div class="musicImg">
+                사진
+            </div>
+            <div class="musicImg">
+                사진
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/001.png" alt="이미지">
+        </div>
+        <div class="user">
+            <div class="join">
+                    <p class="left">멜론을 더 안전하게 이용하세요</p>
+                    <a href="#" class="right">회원가입</a>
+                    <div class="loginAlign">
+                        <button type="button" class="loginButton">로그인</button>
+                    </div>
+            </div>
+            <div class="blank">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

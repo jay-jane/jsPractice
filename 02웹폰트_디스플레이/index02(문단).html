@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .tx {
+            color: grey;
+            letter-spacing: 10px;
+            text-align: center; /*블록태그에서만 사용 가능*/
+        }
+        /* 기준이 되는 요소에 태그 */
+        .tx1 img {
+            vertical-align: middle;
+        }
+        /* 기준이 되는 요소가 없을 때 수직 정렬 */
+        .tx2 {
+            border: 1px solid #777;
+            height: 100px;
+            line-height: 100px; /* 줄 간 간격 */
+        }
+    </style>
+</head>
+<body>
+    <p class="tx">
+        안녕하세요
+    </p>
+    <p class="tx1">
+        <img src="img/css3.png" alt="이미지">
+        수직 정렬
+    </p>
+    <p class="tx2">
+        height와 line-height를 동일하게, 한 줄일 때만 사용 가능
+    </p>
+</body>
+</html>
