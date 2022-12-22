@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        .list {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid #777;
+        }
+        p {height: 100px; }
+        .content {position: relative;} /* position: absolute 적용 시 부모에 relative를 넣어준다 */
+        .item1 {background-color: aqua;}
+        .item2 {
+            background-color: red;
+            position: absolute; /* body 기준 z축으로 올려졌다고 생각하기 */
+            /* position: relative - relative가 있는 태그 기준으로 위치함 */
+            /* 포지션을 적용하면 top/bottom 중 하나, left/right 중 하나를 선택해서 위치 조정 */
+            top: 70px;
+            left: 200px;
+            width: 50px;
+            height: 50px;
+        }
+        .item3{background-color: yellow;}
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="content">
+            <p class="item1">포지션</p>
+            <p class="item2">포지션</p>
+            <p class="item3">포지션</p>
+        </div>
+    </div>
+</body>
+</html>

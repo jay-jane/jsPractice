@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0; box-sizing: border-box;}
+        .box {
+            margin: 0 auto;
+            border: 1px solid #777;
+            padding: 20px;
+            width: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box .image {
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+        
+        .box .text {
+            padding-left: 100px;
+            overflow: hidden;
+        }
+        .text textarea {width: 100%; text-align: center; }
+        
+        .text .left {
+            float: left;
+        }
+        .text .left input {width: 100px; display: block;}
+
+        .text .right {
+            float: right;
+        }
+
+        .box .headline {
+            padding-left: 60px;
+            display: inline-block;
+        }
+        
+        .box img {width: 80px;}
+
+        .box .right2 {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> <!-- margin 0 auto -->
+        <div class="image"> <!-- position -->
+            <img src="img/001.png" alt="이미지">
+        </div>
+
+        <div class="text"> <!-- padding left -->
+            <textarea cols="30" rows="15"></textarea>
+            <div class="left"> <!-- float: left -->
+                <input type="text">
+                <input type="text">
+            </div>
+            <button type="button" class="right">등록하기</button>
+        </div>
+    </div>
+    
+    <div class="box">
+        <div class="image">
+            <img src="img/001.png" alt="이미지2">
+        </div>
+        <div class="headline">
+            <h3>제목</h3>
+            <p>내용</p>
+        </div>
+        <button type="button" class="right2">삭제</button>
+        <button type="button" class="right2">수정</button>
+    </div>
+</body>
+</html>

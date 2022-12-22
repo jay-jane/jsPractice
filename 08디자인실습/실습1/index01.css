@@ -1,0 +1,69 @@
+* {padding: 0; margin: 0; box-sizing: border-box; text-align: center;}
+/* 헤더부분 - 로고, 메뉴 */
+.logo {
+    padding: 20px;
+}
+
+.menu ul {background-color: black; }
+.menu li {
+    display: inline;
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 900;
+    color: white;
+}
+.menu li a:hover {
+    background-color: darkgrey;
+}
+/* 아티클 부분 - 제품 목록 */
+.item {
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.item .img {
+    float: left;
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+.info{
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.info .leftbox {
+    position: absolute;
+    top: 0;
+    left: -220px;
+}
+
+.info .rightbox {
+    position: absolute;
+    top: 0;
+    right: -220px;
+}
+
+header .top {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: palevioletred;
+}
+.top a {
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+}
