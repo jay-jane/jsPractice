@@ -1,0 +1,255 @@
+
+* {padding: 0; margin: 0; list-style: none; box-sizing: border-box;}
+a {text-decoration: none;}
+img {max-width: 100%; height: auto;}
+
+/* 헤더 */
+#header {border-top: 4px solid #00d344; }
+#header .wrap {border-bottom: 1px solid #999;}
+#header .wrap .top {margin: 0 auto; width: 1008px; overflow: hidden;}
+
+#header .wrap .top .top_left {
+    float: left; 
+    padding: 11px 7px;
+    font-size: 12px;
+    color: #999;
+}
+#header .wrap .top .top_right {float: right; font-size: 12px;}
+.top_right ul li {display: inline; border-left: 1px solid #999;}
+.top_right ul li a {
+    display: inline-block;
+    color: #666;
+    padding: 11px 7px;
+    font-weight: 700;
+}
+
+#header .wrap .mid {margin: 0 auto; width: 1008px; }
+
+#header .wrap .mid fieldset {
+    background-image: url(img/bar_search.png);
+    width: 323px;
+    height: 40px;
+    margin-top: 36px;
+    margin-left: 11px;
+    border: none;
+}
+#header .wrap .mid .mid_left .bar {
+    width: 260px;
+    height: 25px;
+    margin-top: 7px;
+    margin-left: 18px;
+    display: inline-block;
+    cursor: text;
+    border: none;
+}
+
+#header .wrap .mid .btn {
+    background-image: url(img/btn_search.png);
+    width: 45px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+#header .mid {overflow: hidden;}
+#header .mid .mid_left {
+    float: left;
+    overflow: hidden;
+}
+#header .mid_left .bar {float: left;}
+#header .mid_right .btn {float: right;}
+#header .mid .mid_right {float: right;}
+
+#header .mid .mid_right img {
+    margin-top: 10px;
+}
+
+#header .bottom {margin: 0 auto; width: 1008px; overflow: hidden;}
+#header .bottom ul li{display: inline;}
+#header .bottom ul li a {
+    display: inline-block;
+    width: 75px;
+    height: 40px;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#header .bottom .list_left {
+    float: left;
+    width: 720px;
+    height: 41px;
+}
+
+#header .bottom .list_right {
+    float: right;
+}
+
+/* 섹션 */
+#section .list {
+    overflow: hidden;
+    width: 1020px;
+    margin: 0 auto;
+}
+#section .list .music {
+    float: left;
+    width: 480px;
+    height: 310px;
+    overflow: hidden;
+}
+#section .list .image {
+    float: left;
+    /* width: 236px;
+    height: 310px; */
+    margin-left: 8px;
+}
+#section .list .user {
+    float: left;
+    width: 280px;
+    margin-left: 8px;
+    overflow: hidden;
+}
+
+#section .music .musicImg {
+    float: left;
+    width: 33.3333%;
+    height: 159px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#section .user .join {
+    border: 1px solid #777;
+    height: 114px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#section .user .blank {
+    /* border: 1px solid #777;
+    height: 188px; */
+    box-sizing: border-box;
+}
+
+#section .join .left {
+    float: left;
+    font-size: 10px;
+    color: darkgrey;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#section .join .right {
+    float: right;
+    font-size: 10px;
+    text-decoration: none;
+    color: darkgrey;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+#section .loginButton {
+    background-color: #00d344;
+    border: none;
+    color: white;
+    width: 250px;
+    height: 40px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+#section .join .loginAlign {
+    text-align: center;
+}
+
+#section .list .music .musicImg a {
+    position: relative;
+}
+
+#section .list .music .musicImg .singer {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+    font-size: 13px;
+}
+
+#section .list .musicImg .hover_cont {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+#section .list .musicImg:hover > .hover_cont {
+    opacity: 1;
+}
+
+#section .list .musicImg .hover_cont a {
+    color: #fff;
+    margin-top: 55px;
+    display: block;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+/* 배너 */
+#banner {width: 1020px; margin: 0 auto;}
+
+/* 이슈(왼) */
+#issue {margin: 0 auto; width: 1020px; }
+
+#issue h4 {
+    border-bottom: 1px solid #999;
+    padding: 5px 0;
+}
+#issue h4 span {
+    font-size: 9px;
+    color: #999;
+}
+
+#issue ul {overflow: hidden; width: 704px; }
+#issue ul li {
+    float: left;
+    width: 223px;
+    margin: 16px 0 0 16px;
+}
+#issue ul li a {cursor: pointer; }
+#issue ul li a span {
+    display: block;
+    margin-top: 5px;
+}
+#issue ul li .inner {display: block; }
+
+#issue .content .inner .title {
+    font-size: 15px;
+    color: #000;
+}
+
+#issue .content .inner .cont {
+    font-size: 10px;
+    color: #777;
+}
+
+#issue .content .inner .hit {
+    font-size: 10px;
+    color: green;
+}
+#issue .content .inner .hit span{
+    display: inline;
+    color: #777;
+}
+
+
+
+
