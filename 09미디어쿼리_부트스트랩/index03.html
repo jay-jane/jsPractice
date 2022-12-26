@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css 링크 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jquery 링크 -->
+    <script src="jquery/jquery-3.6.3.min.js"></script>
+    <!-- 부트스트랩 테마가 필요하다면 이 곳에 추가 -->
+
+    <!-- js 링크 -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .mygrid {
+            border: 1px solid #777;
+            margin: 0 auto;
+            float: none;
+            /* 부트스트랩의 col 클래스가 float의 영향을 받기 때문에
+                            하나의 박스를 가운데로 보낼 때에만 float을 해제하고 margin: 0 auto; 입력 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-group">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sx-12 mygrid">
+                    <h3>회원가입</h3>
+                    <label for="usr">아이디:</label>
+                    <input type="text" class="form-control" id="usr">
+                    <div class="form-group">
+                        <label for="pwd">패스워드:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
